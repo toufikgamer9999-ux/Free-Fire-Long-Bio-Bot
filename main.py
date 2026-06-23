@@ -17,8 +17,8 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN = os.getenv('BOT_TOKEN', '')
 API_KEY = os.getenv('API_KEY', '')
 API_BASE_URL = 'https://bio.ffutils.tech/api/update_bio'
-OWNER_USERNAME = '' # add your telegram username here. example: '@itzpaglu'
-REQUIRED_CHANNEL = '' # add your required channel username here. example: '@paglu_dev'. if you dont have any channel then leave it blank.
+OWNER_USERNAME = '@hossaiin02' # add your telegram username here. example: '@itzpaglu'
+REQUIRED_CHANNEL = '@free_fire_multiverse' # add your required channel username here. example: '@paglu_dev'. if you dont have any channel then leave it blank.
 
 if not BOT_TOKEN:
     logger.error("BOT_TOKEN environment variable not set!")
@@ -199,7 +199,7 @@ def handle_bio(message):
                 f"📱 Platform: `{platform}`\n"
                 f"🌍 Region: `{region}`\n\n"
                 f"📝 New Bio: {new_bio}\n\n"
-                "👑 Credit: @itzpaglu"
+                "👑 Credit: @hossaiin02"
             )
             bot.send_message(message.chat.id, response_text, parse_mode='Markdown')
 
